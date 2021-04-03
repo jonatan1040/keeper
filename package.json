@@ -9,17 +9,14 @@
     "@testing-library/user-event": "^7.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "react-scripts": "^4.0.3",
+    "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
-  "engines": {
-    "node": "12.21.0"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -32,7 +29,11 @@
     ],
     "development": [
       "last 1 chrome version",
-      "last 1 firefox version"
+      "last 1 firefox version",
+      "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^5.3.1"
   }
 }
